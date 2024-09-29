@@ -4,20 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folio | Suwe</title>
+    <!-- FONTAWESOME CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FAVICON LINK -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Suwethan M | Backend developer</title>
 </head>
 <body>
-    <h1>Website is under development...</h1>
-    <hr />
-    <h3><u>Other Project</u></h3>
-    <div class="project">
-        <h4 class="title">
-            Node application for authentication and authorization
-        </h4>
-        <div>Project link: </div>
-        <a href="https://suwe-auth.onrender.com/" target="_blank">
-            Click here
-        </a>
-    </div>
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <a href="#" class="logo"> Suwethan M | Java Backend developer </a>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3> Hi, </h3>
+            <h1> I'm Suwethan </h1>
+            <h3><span>Backend developer </span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, molestias sed. Rerum quia atque, placeat ab sint aliquid laudantium provident vero aut debitis deserunt vitae praesentium quidem animi rem voluptatum.</p>
+            <div class="social-media">
+                <a href="#">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-x-twitter fa-2x"></i>
+                </a>
+            </div>
+            <a href="#" class="btn"> Dowload Resume </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">
+                About <span> Me </span>
+            </h2>
+            <h3> Backend developer </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quibusdam. Id repellendus at rem dignissimos dolorem vitae odio optio est deserunt nam. Exercitationem omnis saepe at vero pariatur est ratione.</p>
+            <a href="#" class="btn"> Read more </a>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <h2 class="heading"> Contact <span> Me </span> </h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" name="fname" id="" placeholder="Full Name">
+                <input type="email" name="email" id="" placeholder="Email">
+            </div>
+            
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number" name="ph_number">
+                <input type="text" placeholder="Email Subject" name="subject">
+            </div>
+
+            <textarea name="body" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+    </section>
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p> Copyright &copy; 2024 by @suwe-dev | All Rights Reserved. </p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home">
+                <i class="fa-solid fa-angle-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
