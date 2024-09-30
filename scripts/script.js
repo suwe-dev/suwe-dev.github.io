@@ -54,3 +54,65 @@ window.onscroll = () => {
     }
   });
 };
+
+/*
+*  Snack bar toggle
+*/
+
+document.getElementById('enquiry').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const base_url = 'https://flask-mail-u1xc.onrender.com';
+  
+  // Get form values
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email-id').value;
+  const phone_number = document.getElementById('phone-no').value;
+  const email_subject = document.getElementById('email-subject').value;
+  const email_body = document.getElementById('email-body').value;
+
+  // Create payload object
+  const payload = {
+    "username": username,
+    "phone_number": phone_number,
+    "sender_email": email,
+    "email_subject": email_subject,
+    "email_body": email_body
+  };
+
+  // API integration
+  fetch(`${base_url}/send_email`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(payload) 
+  })
+  .then(response => response.json())
+  .then(
+    data => {
+      // Handle the response data
+      console.log('Success:', data);
+      showSnackbar(data.message);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+    showSnackbar('Email submission failed');
+  })
+
+  event.target.reset();
+});
+
+function showSnackbar(message) {
+  const snackbar = document.querySelector('.snackbar');
+  snackbar.textContent = message;
+
+  snackbar.classList.toggle('snackbar-hidden');
+  snackbar.classList.toggle('.snackbar-show');
+
+  // Set timeout to hide the snackbar after 3 seconds
+  setTimeout(() => {
+      snackbar.classList.toggle('snackbar-hidden');
+      snackbar.classList.toggle('.snackbar-show');
+  }, 3000);
+}
