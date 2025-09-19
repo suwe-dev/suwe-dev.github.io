@@ -1,12 +1,13 @@
 export default function Home() {
   return (
     <>
-      <header className="text-black">
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
+      <header className="text-black min-h-screen flex flex-col justify-between bg-gray-100">
+        <div className="flex flex-col items-center justify-center px-4 space-y-6 flex-grow">
           <h1 className="text-3xl font-bold">Suwethan M</h1>
           <p className="text-lg text-gray-700">
             <b>Software Engineer |</b> <i>2+ years of experience</i>
           </p>
+
           <ul className="mt-4 text-center max-w-md list-disc list-inside space-y-2 text-gray-800">
             <li>
               Passionate about building scalable, high-performance applications and
@@ -25,10 +26,11 @@ export default function Home() {
               opportunities to grow and create impactful software that scales.
             </li>
           </ul>
-          <div className="mt-12 px-6 py-3 bg-yellow-100 text-yellow-800 rounded-xl text-center text-lg shadow-sm">
-            🚧 This website is under construction. <br />
-            Please check back later for updates!
-          </div>
+        </div>
+
+        <div className="px-6 py-3 bg-yellow-100 text-yellow-800 text-center text-lg shadow-sm">
+          🚧 This website is under construction. <br />
+          Please check back later for updates!
         </div>
       </header>
     </>
