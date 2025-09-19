@@ -28,10 +28,11 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="px-6 py-3 bg-yellow-100 text-yellow-800 text-center text-lg shadow-sm">
+        <div className="px-6 py-3 bg-yellow-300 text-black-800 sm:bg-red-300 text-center text-lg shadow-sm">
           🚧 This website is under construction. <br />
           Please check back later for updates!
         </div>
+
       </header>
     </>
   );
