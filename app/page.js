@@ -2,12 +2,33 @@ export default function Home() {
   return (
     <>
       <header className="text-black">
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 px-4">
           <h1 className="text-3xl font-bold">Suwethan M</h1>
-          <p className="text-lg text-gray-700">Software Engineer</p>
-          <p className="mt-2 text-center max-w-md">
-            Passionate about building scalable applications and solving complex problems.
+          <p className="text-lg text-gray-700">
+            <b>Software Engineer |</b> <i>2+ years of experience</i>
           </p>
+          <ul className="mt-4 text-center max-w-md list-disc list-inside space-y-2 text-gray-800">
+            <li>
+              Passionate about building scalable, high-performance applications and
+              solving complex problems with innovative solutions.
+            </li>
+            <li>
+              Skilled at designing robust architectures, optimizing systems for
+              efficiency, and translating business needs into technical deliverables.
+            </li>
+            <li>
+              Strong foundation in problem-solving, with a focus on clean,
+              maintainable code and continuous improvement.
+            </li>
+            <li>
+              Thrives in collaborative environments, embracing challenges as
+              opportunities to grow and create impactful software that scales.
+            </li>
+          </ul>
+          <div className="mt-12 px-6 py-3 bg-yellow-100 text-yellow-800 rounded-xl text-center text-lg shadow-sm">
+            🚧 This website is under construction. <br />
+            Please check back later for updates!
+          </div>
         </div>
       </header>
     </>
